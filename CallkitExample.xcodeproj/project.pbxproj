@@ -8,24 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		1E646CEA203C7E80007A8FB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646CE9203C7E80007A8FB5 /* AppDelegate.swift */; };
-		1E646CEC203C7E80007A8FB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646CEB203C7E80007A8FB5 /* ViewController.swift */; };
 		1E646CEF203C7E80007A8FB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E646CED203C7E80007A8FB5 /* Main.storyboard */; };
 		1E646CF1203C7E80007A8FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E646CF0203C7E80007A8FB5 /* Assets.xcassets */; };
 		1E646CF4203C7E80007A8FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E646CF2203C7E80007A8FB5 /* LaunchScreen.storyboard */; };
+		1E646CFD203C7FAC007A8FB5 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646CFC203C7FAC007A8FB5 /* Audio.swift */; };
+		1E646D00203C7FC3007A8FB5 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646CFF203C7FC3007A8FB5 /* Call.swift */; };
+		1E646D02203C7FD6007A8FB5 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646D01203C7FD6007A8FB5 /* CallManager.swift */; };
+		1E646D04203C8002007A8FB5 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646D03203C8002007A8FB5 /* ProviderDelegate.swift */; };
+		1E646D06203C801D007A8FB5 /* CallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646D05203C801D007A8FB5 /* CallTableViewCell.swift */; };
+		1E646D09203C8048007A8FB5 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646D08203C8048007A8FB5 /* CallsViewController.swift */; };
+		1E646D0B203C805B007A8FB5 /* NewCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646D0A203C805B007A8FB5 /* NewCallViewController.swift */; };
+		1E646D23203C814F007A8FB5 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E646D22203C814F007A8FB5 /* CallDirectoryHandler.swift */; };
+		1E646D27203C814F007A8FB5 /* CallDirectoryHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E646D20203C814F007A8FB5 /* CallDirectoryHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E646D25203C814F007A8FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E646CDE203C7E80007A8FB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E646D1F203C814F007A8FB5;
+			remoteInfo = CallDirectoryHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E646D2B203C814F007A8FB5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1E646D27203C814F007A8FB5 /* CallDirectoryHandler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E646CE6203C7E80007A8FB5 /* CallkitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallkitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E646CE9203C7E80007A8FB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E646CEB203C7E80007A8FB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E646CEE203C7E80007A8FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E646CF0203C7E80007A8FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E646CF3203C7E80007A8FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E646CF5203C7E80007A8FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E646CFC203C7FAC007A8FB5 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		1E646CFF203C7FC3007A8FB5 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		1E646D01203C7FD6007A8FB5 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		1E646D03203C8002007A8FB5 /* ProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		1E646D05203C801D007A8FB5 /* CallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewCell.swift; sourceTree = "<group>"; };
+		1E646D08203C8048007A8FB5 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
+		1E646D0A203C805B007A8FB5 /* NewCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallViewController.swift; sourceTree = "<group>"; };
+		1E646D20203C814F007A8FB5 /* CallDirectoryHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E646D22203C814F007A8FB5 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		1E646D24203C814F007A8FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1E646CE3203C7E80007A8FB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E646D1D203C814F007A8FB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				1E646CE8203C7E80007A8FB5 /* CallkitExample */,
+				1E646D21203C814F007A8FB5 /* CallDirectoryHandler */,
 				1E646CE7203C7E80007A8FB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1E646CE6203C7E80007A8FB5 /* CallkitExample.app */,
+				1E646D20203C814F007A8FB5 /* CallDirectoryHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +104,53 @@
 		1E646CE8203C7E80007A8FB5 /* CallkitExample */ = {
 			isa = PBXGroup;
 			children = (
+				1E646D07203C802F007A8FB5 /* UI */,
+				1E646CFE203C7FB7007A8FB5 /* Call Manager */,
+				1E646CFB203C7F95007A8FB5 /* Audio */,
 				1E646CE9203C7E80007A8FB5 /* AppDelegate.swift */,
-				1E646CEB203C7E80007A8FB5 /* ViewController.swift */,
+				1E646D03203C8002007A8FB5 /* ProviderDelegate.swift */,
 				1E646CED203C7E80007A8FB5 /* Main.storyboard */,
 				1E646CF0203C7E80007A8FB5 /* Assets.xcassets */,
 				1E646CF2203C7E80007A8FB5 /* LaunchScreen.storyboard */,
 				1E646CF5203C7E80007A8FB5 /* Info.plist */,
 			);
 			path = CallkitExample;
+			sourceTree = "<group>";
+		};
+		1E646CFB203C7F95007A8FB5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				1E646CFC203C7FAC007A8FB5 /* Audio.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		1E646CFE203C7FB7007A8FB5 /* Call Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1E646CFF203C7FC3007A8FB5 /* Call.swift */,
+				1E646D01203C7FD6007A8FB5 /* CallManager.swift */,
+			);
+			path = "Call Manager";
+			sourceTree = "<group>";
+		};
+		1E646D07203C802F007A8FB5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1E646D05203C801D007A8FB5 /* CallTableViewCell.swift */,
+				1E646D08203C8048007A8FB5 /* CallsViewController.swift */,
+				1E646D0A203C805B007A8FB5 /* NewCallViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1E646D21203C814F007A8FB5 /* CallDirectoryHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1E646D22203C814F007A8FB5 /* CallDirectoryHandler.swift */,
+				1E646D24203C814F007A8FB5 /* Info.plist */,
+			);
+			path = CallDirectoryHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +163,34 @@
 				1E646CE2203C7E80007A8FB5 /* Sources */,
 				1E646CE3203C7E80007A8FB5 /* Frameworks */,
 				1E646CE4203C7E80007A8FB5 /* Resources */,
+				1E646D2B203C814F007A8FB5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E646D26203C814F007A8FB5 /* PBXTargetDependency */,
 			);
 			name = CallkitExample;
 			productName = CallkitExample;
 			productReference = 1E646CE6203C7E80007A8FB5 /* CallkitExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1E646D1F203C814F007A8FB5 /* CallDirectoryHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E646D28203C814F007A8FB5 /* Build configuration list for PBXNativeTarget "CallDirectoryHandler" */;
+			buildPhases = (
+				1E646D1C203C814F007A8FB5 /* Sources */,
+				1E646D1D203C814F007A8FB5 /* Frameworks */,
+				1E646D1E203C814F007A8FB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallDirectoryHandler;
+			productName = CallDirectoryHandler;
+			productReference = 1E646D20203C814F007A8FB5 /* CallDirectoryHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +203,10 @@
 				ORGANIZATIONNAME = Mobdev125;
 				TargetAttributes = {
 					1E646CE5203C7E80007A8FB5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1E646D1F203C814F007A8FB5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				1E646CE5203C7E80007A8FB5 /* CallkitExample */,
+				1E646D1F203C814F007A8FB5 /* CallDirectoryHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +242,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E646D1E203C814F007A8FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,12 +256,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E646CEC203C7E80007A8FB5 /* ViewController.swift in Sources */,
+				1E646D0B203C805B007A8FB5 /* NewCallViewController.swift in Sources */,
+				1E646D06203C801D007A8FB5 /* CallTableViewCell.swift in Sources */,
+				1E646CFD203C7FAC007A8FB5 /* Audio.swift in Sources */,
+				1E646D09203C8048007A8FB5 /* CallsViewController.swift in Sources */,
+				1E646D00203C7FC3007A8FB5 /* Call.swift in Sources */,
+				1E646D04203C8002007A8FB5 /* ProviderDelegate.swift in Sources */,
 				1E646CEA203C7E80007A8FB5 /* AppDelegate.swift in Sources */,
+				1E646D02203C7FD6007A8FB5 /* CallManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E646D1C203C814F007A8FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E646D23203C814F007A8FB5 /* CallDirectoryHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E646D26203C814F007A8FB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E646D1F203C814F007A8FB5 /* CallDirectoryHandler */;
+			targetProxy = 1E646D25203C814F007A8FB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E646CED203C7E80007A8FB5 /* Main.storyboard */ = {
@@ -273,8 +415,10 @@
 		1E646CF9203C7E80007A8FB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XH8GBZFWJ;
 				INFOPLIST_FILE = CallkitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobdev.CallkitExample;
@@ -287,12 +431,46 @@
 		1E646CFA203C7E80007A8FB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XH8GBZFWJ;
 				INFOPLIST_FILE = CallkitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobdev.CallkitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E646D29203C814F007A8FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XH8GBZFWJ;
+				INFOPLIST_FILE = CallDirectoryHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdev.CallkitExample.CallDirectoryHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E646D2A203C814F007A8FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XH8GBZFWJ;
+				INFOPLIST_FILE = CallDirectoryHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobdev.CallkitExample.CallDirectoryHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +493,15 @@
 			buildConfigurations = (
 				1E646CF9203C7E80007A8FB5 /* Debug */,
 				1E646CFA203C7E80007A8FB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E646D28203C814F007A8FB5 /* Build configuration list for PBXNativeTarget "CallDirectoryHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E646D29203C814F007A8FB5 /* Debug */,
+				1E646D2A203C814F007A8FB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
